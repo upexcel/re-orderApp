@@ -1,0 +1,25 @@
+<ion-content class="content1">
+    <ion-list>
+        <ion-item class="itemCss">
+            <ion-thumbnail item-end>
+               <img class="img1" src="assets/imgs/cross.png">
+            </ion-thumbnail>
+            <h2>
+                {{message}}
+                
+            </h2>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer>
+    <ion-grid no-padding no-lines>
+        <ion-row>
+            <ion-col col-6 no-padding>
+                <button no-margin ion-button full (click)="reSubmit()">Re-Scan</button>
+            </ion-col>
+            <ion-col col-6 no-padding>
+                <button ion-button no-margin full color="danger" (click)="dismiss()">Cancel</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>
